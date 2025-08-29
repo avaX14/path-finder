@@ -70,7 +70,11 @@ export function PathFinder() {
       <div className='mt-10'>
         <label>{selectedMapName}</label>
         <MapScreen mapText={mapText} />
-        {error && <p className='text-red-500'>{error}</p>}
+        {error && (
+          <div className='border border-red-500 bg-red-50 text-red-700 p-2 rounded'>
+            <p>{error}</p>
+          </div>
+        )}
       </div>
 
       {result && <ResultBox result={result} />}
