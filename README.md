@@ -1,74 +1,71 @@
-# React + TypeScript + Vite
+# Software Sauna Code Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **Path Finder App** that calculates and visualizes a walk path based on predefined rules.  
+The application is built with **TypeScript + React**, focusing on clean code, modular design, and problem-solving.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Visualizes a pathfinding algorithm on a grid
+- Supports dynamic start/end points
+- Handles obstacles and shortest path calculation
+- Clean and modular architecture
+- Written in TypeScript for type safety
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **React**: ^19.1.1  
+- **Vite**: ^4.3.9  
+- **TypeScript**: ~5.8.3  
+- **Tailwind CSS**: ^3.4.0  
+- **Jest**: ^29.x (unit & acceptance testing)  
+- **Node.js**: 18 (recommended)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📂 Project Structure
+src/
+├── components/ # Reusable UI components
+├── utils/ # Pathfinding and helper logic
+├── assets/ # Images, icons, etc.
+├── constants/ # Centralized constants
+├── types/ # TypeScript type definitions
+├── validations/ # Input and schema validations
+└── App.tsx # Main entry point
+
+tests/
+├── acceptance-tests # High-level integration/acceptance tests
+└── unit-tests # Low-level unit tests
+
+## Installation
+
+```bash
+git clone https://github.com/avaX14/path-finder.git
+cd path-finder
+npm install
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Testing
+```bash
+npm test
 ```
 
 ## Demo
 
+### Selecting valid map
 
 ![App Demo](./src/assets/valid-map.gif)
+
+
+### Selecting invalid map
+
+![App Demo](./src/assets/invalid-map.gif)
+
+### Creating custom maps
+
+![App Demo](./src/assets/custom-map1.gif)
+![App Demo](./src/assets/custom-map2.gif)
