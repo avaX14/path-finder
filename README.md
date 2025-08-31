@@ -70,4 +70,5 @@ export default tseslint.config([
 
 ## Demo
 
-./src/assets/valid-map.gif
+
+![App Demo](./src/assets/valid-map.gif)
