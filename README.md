@@ -24,18 +24,20 @@ The application is built with **TypeScript + React**, focusing on clean code, mo
 
 
 ## 📂 Project Structure
+```
 src/
-├── components/ # Reusable UI components
-├── utils/ # Pathfinding and helper logic
-├── assets/ # Images, icons, etc.
-├── constants/ # Centralized constants
-├── types/ # TypeScript type definitions
-├── validations/ # Input and schema validations
-└── App.tsx # Main entry point
+├── components/        # Reusable UI components
+├── utils/             # Pathfinding and helper logic
+├── assets/            # Images, icons, etc.
+├── constants/         # Centralized constants
+├── types/             # TypeScript type definitions
+├── validations/       # Input and schema validations
+└── App.tsx            # Main entry point
 
 tests/
-├── acceptance-tests # High-level integration/acceptance tests
-└── unit-tests # Low-level unit tests
+├── acceptance-tests   # High-level acceptance tests
+└── unit-tests         # Low-level unit tests
+```
 
 ## Installation
 
