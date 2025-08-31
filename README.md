@@ -3,7 +3,6 @@
 This project is a **Path Finder App** that calculates and visualizes a walk path based on predefined rules.  
 The application is built with **TypeScript + React**, focusing on clean code, modular design, and problem-solving.
 
----
 
 ## 🚀 Features
 
@@ -13,7 +12,6 @@ The application is built with **TypeScript + React**, focusing on clean code, mo
 - Clean and modular architecture
 - Written in TypeScript for type safety
 
----
 
 ## 🛠️ Tech Stack
 
@@ -24,7 +22,6 @@ The application is built with **TypeScript + React**, focusing on clean code, mo
 - **Jest**: ^29.x (unit & acceptance testing)  
 - **Node.js**: 18 (recommended)
 
----
 
 ## 📂 Project Structure
 src/
